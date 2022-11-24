@@ -1,0 +1,50 @@
+.section-login__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
+  
+  .section-login__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #464646;
+    margin-bottom: 25px;
+  }
+  
+  .section-login__input-wrapper {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  @media (max-width: 1024px) {
+    .section-login__container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+    .section-login__title {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  
+    .section-login__input-wrapper {
+      width: 275px;
+      gap: 0;
+      align-items: center;
+    }
+  
+    .button-login {
+      padding: 12px 34px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .section-login__container {
+      padding-top: 97px;
+      padding-bottom: 76px;
+    }
+  }

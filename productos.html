@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animated-placeholder.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__content">
+        <a href="./index.html" class="header__title">
+          <img src="img/logo-e-commerce.svg" alt="" class="header__img" />
+          <img src="img/texto.svg" alt="" class="header__img-1" />
+        </a>
+        <div class="header__buscador-container hidden-mobile">
+          <input
+            type="text"
+            name="buscador"
+            placeholder="¿Qúe deseas buscar?"
+            class="header__buscador"
+          />
+          <img src="img/search.svg" alt="" class="header__search" />
+        </div>
+        <a href="./login.html" class="header__button">Login</a>
+        <button class="header__toggle-search hidden-desktop">
+          <img src="img/search.svg" alt="" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section-login__container bg-gray">
+        <h2 class="section-login__title">Iniciar Sesión</h2>
+        <div class="section-login__input-wrapper">
+          <div class="input-block">
+            <input required type="text" name="correo" spellcheck="false" />
+            <span class="placeholder"> Escriba su correo electrónico </span>
+            <p id="my-form-status-nombre" class="section-3__error"></p>
+          </div>
+          <div class="input-block">
+            <input required type="password" name="contraseña" spellcheck="false"></input>
+            <span class="placeholder"> Escriba su contraseña </span>
+            <p id="my-form-status-mensaje" class="section-3__error"></p>
+          </div>
+          <button type="submit" class="button-filled button-login" id="my-form-button">
+            Entrar
+          </button>
+        </div>
+      </section>
+      <section class="section-3 container">
+        <div class="section-3__container">
+          <div class="section-3__logo">
+            <img
+              src="img/logo-e-commerce.svg"
+              alt=""
+              class="section-3__logo1"
+            />
+            <img src="img/texto.svg" alt="" class="section-3__logo2" />
+          </div>
+          <div class="section-3__link">
+            <a href="" class="section-3__a">Quienes Somos</a>
+            <a href="" class="section-3__a">Política de privacidad</a>
+            <a href="" class="section-3__a">Programa de fidelidad</a>
+            <a href="" class="section-3__a">Nuestras tiendas</a>
+            <a href="" class="section-3__a">Quiero ser franquiciado</a>
+            <a href="" class="section-3__a">Anúncie aquí</a>
+          </div>
+          <div class="section-3__form">
+            <p class="section-3__texto">Hable con nosotros</p>
+            <div class="input-block">
+              <input required type="text" name="nombre" spellcheck="false" />
+              <span class="placeholder"> Nombre </span>
+              <p id="my-form-status-nombre" class="section-3__error"></p>
+            </div>
+            <div class="input-block">
+              <textarea required name="mensaje" spellcheck="false" rows="4"></textarea>
+              <span class="placeholder"> Mensaje </span>
+              <p id="my-form-status-mensaje" class="section-3__error"></p>
+            </div>
+            <div class="section-3__button-wrapper">
+              <button type="submit" class="button-filled" id="my-form-button">
+                Enviar mensaje
+              </button>
+              <p id="my-form-status"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <p>Desarrollado por Nicolas Monsalve G </p>
+        <p id="current-year"></p>
+      </section>
+    </main>
+  </body>
+</html>
